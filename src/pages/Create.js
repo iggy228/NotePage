@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import { Typography, Button, Container, TextField, Radio, makeStyles, RadioGroup, FormControlLabel, FormLabel, FormControl } from '@material-ui/core'
 import PublishIcon from '@material-ui/icons/Publish'
 
 const useStyles = makeStyles({
   btn: {
-    borderRadius: 16,    
+    borderRadius: 16,
   },
   title: {
     textDecoration: 'underline',
@@ -18,6 +19,8 @@ const useStyles = makeStyles({
 export default function Create() {
   const classes = useStyles()
 
+  const history = useHistory()
+
   const [title, setTitle] = useState('')
   const [details, setDetails] = useState('')
   const [category, setCategory] = useState('money')
@@ -29,10 +32,14 @@ export default function Create() {
     event.preventDefault()
     
     if (title && details) {
-      console.log(title, details)
+      fetch('http://localhost:8000/notes', { 
+        method: 'POST',
+        headers: {"Content-type": "application/json"},
+        body: JSON.stringify({ title, details, category })
+      }).then(() => history.push('/'))
     }
-    setTitleError(title == '')
-    setDetailsError(details == '')
+    setTitleError(title === '')
+    setDetailsError(details === '')
   }
 
   return (
@@ -74,7 +81,7 @@ export default function Create() {
             <FormControlLabel control={<Radio />} label='Money' value='money' />
             <FormControlLabel control={<Radio />} label='Shopping' value='shopping' />
             <FormControlLabel control={<Radio />} label='Todos' value='todos' />
-            <FormControlLabel control={<Radio />} label='Other' value='other' />
+            <FormControlLabel control={<Radio />} label='Others' value='others' />
           </RadioGroup>
         </FormControl>
         
