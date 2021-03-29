@@ -1,34 +1,28 @@
 {
   "notes": [
     {
-      "title": "Yoshi's birthday bash",
-      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "category": "reminders",
-      "id": 1
-    },
-    {
-      "title": "Complete my ninja training",
-      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
-      "category": "others",
-      "id": 2
-    },
-    {
-      "title": "Order a pizza!",
-      "details": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-      "category": "todos",
-      "id": 3
-    },
-    {
-      "title": "Pozdrav Lukáša a Nora",
-      "details": "Zajtra pozdrav tých dvoch beťárov.",
-      "category": "todos",
-      "id": 4
-    },
-    {
       "title": "Nezabudni písať KOPKU",
       "details": "Musíš ju napísať do 8.4.2021.",
       "category": "others",
       "id": 5
+    },
+    {
+      "title": "Make a game",
+      "details": "Ju must start make a game",
+      "category": "todos",
+      "id": 6
+    },
+    {
+      "title": "Buy a monitor",
+      "details": "Buy a monitor for better vision of future in your life.",
+      "category": "money",
+      "id": 7
+    },
+    {
+      "title": "Lorem Ipsum",
+      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis dignissim ornare. Vivamus lobortis efficitur mi. Morbi suscipit magna enim, sed feugiat ante hendrerit non. Nam nisl diam, lobortis a rutrum sit amet, molestie molestie risus. Nam in facilisis dui. Cras vitae nibh ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+      "category": "money",
+      "id": 8
     }
   ]
 }

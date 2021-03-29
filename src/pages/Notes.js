@@ -1,15 +1,8 @@
-import { Container, Card, makeStyles } from '@material-ui/core'
+import { Container, Grid } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
-
-const useStyles = makeStyles({
-  card: {
-    marginTop: 16,
-    padding: 8
-  }
-})
+import NoteCard from '../components/NodeCard'
 
 export default function Notes() {
-  const classes = useStyles()
 
   const [notes, setNotes] = useState([])
 
@@ -18,13 +11,24 @@ export default function Notes() {
     .then(res => res.json()).then(data => setNotes(data))
   }, [])
 
+  const handleDelete = async (id) => {
+    await fetch('http://localhost:8000/notes/' + id, {
+      method: 'DELETE'
+    })
+
+    const newNotes = notes.filter(note => note.id !== id)
+    setNotes(newNotes)
+  }
+
   return (
     <Container>
-      {notes.map(note => (
-        <Card key={note.id} className={classes.card}>
-          <p>{note.details}</p>
-        </Card>
-      ))}
+      <Grid container spacing={3}>
+        {notes.map(note => (
+          <Grid item key={note.id} xs={12} sm={6} md={4} xl={3}>
+            <NoteCard note={note} handleDelete={handleDelete}/>
+          </Grid>
+        ))}
+      </Grid>
     </Container>
   )
 }
