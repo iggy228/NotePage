@@ -19,10 +19,16 @@
       "id": 7
     },
     {
-      "title": "Lorem Ipsum",
-      "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis dignissim ornare. Vivamus lobortis efficitur mi. Morbi suscipit magna enim, sed feugiat ante hendrerit non. Nam nisl diam, lobortis a rutrum sit amet, molestie molestie risus. Nam in facilisis dui. Cras vitae nibh ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
-      "category": "money",
-      "id": 8
+      "title": "Hey ono to funguje",
+      "details": "Ono to ozaj funguje tak ako ma",
+      "category": "todos",
+      "id": 9
+    },
+    {
+      "title": "Dorob zmeni v apke",
+      "details": "Dorob tam tu zmenu v apke vo svetlách a potom rob čo chceš\n",
+      "category": "todos",
+      "id": 10
     }
   ]
 }
