@@ -1,4 +1,4 @@
-import { Drawer, Typography, List, ListItem, makeStyles, ListItemText, ListItemIcon, AppBar, Toolbar } from '@material-ui/core'
+import { Drawer, Typography, List, ListItem, makeStyles, ListItemText, ListItemIcon, AppBar, Toolbar, Avatar } from '@material-ui/core'
 import { AddCircleOutlineOutlined, SubjectOutlined } from '@material-ui/icons'
 import { format } from 'date-fns'
 import React from 'react'
@@ -36,6 +36,9 @@ const useStyles = makeStyles((theme) => {
         },
         date: {
             flexGrow: 1,
+        },
+        avatar: {
+            marginLeft: theme.spacing(2),
         }
     }
 })
@@ -69,6 +72,7 @@ export default function Layout({ children }) {
                     <Typography>
                         Iggy
                     </Typography>
+                    <Avatar className={classes.avatar} src="/thug_macka.jpg" />
                 </Toolbar>
             </AppBar>
 
