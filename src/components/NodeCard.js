@@ -1,6 +1,10 @@
 import React from 'react'
-import { Card, CardContent, CardHeader, Typography, IconButton } from '@material-ui/core'
+import { Card, CardContent, CardHeader, Typography, IconButton, makeStyles } from '@material-ui/core'
 import { DeleteOutlined } from '@material-ui/icons'
+
+const useStyles = makeStyles({
+    
+})
 
 export default function NodeCard({ note, handleDelete }) {
     return (

@@ -3,31 +3,31 @@
     {
       "title": "Nezabudni písať KOPKU",
       "details": "Musíš ju napísať do 8.4.2021.",
-      "category": "others",
+      "category": "Others",
       "id": 5
     },
     {
       "title": "Make a game",
       "details": "Ju must start make a game",
-      "category": "todos",
+      "category": "Todos",
       "id": 6
     },
     {
       "title": "Buy a monitor",
       "details": "Buy a monitor for better vision of future in your life.",
-      "category": "money",
+      "category": "Money",
       "id": 7
     },
     {
       "title": "Hey ono to funguje",
       "details": "Ono to ozaj funguje tak ako ma",
-      "category": "todos",
+      "category": "Todos",
       "id": 9
     },
     {
       "title": "Dorob zmeni v apke",
       "details": "Dorob tam tu zmenu v apke vo svetlách a potom rob čo chceš\n",
-      "category": "todos",
+      "category": "Todos",
       "id": 10
     }
   ]

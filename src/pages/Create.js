@@ -23,7 +23,7 @@ export default function Create() {
 
   const [title, setTitle] = useState('')
   const [details, setDetails] = useState('')
-  const [category, setCategory] = useState('money')
+  const [category, setCategory] = useState('Money')
 
   const [titleError, setTitleError] = useState(false)
   const [detailsError, setDetailsError] = useState(false)
@@ -78,10 +78,10 @@ export default function Create() {
         <FormControl className={classes.field} component='fieldset'>
           <FormLabel component='legend'>Note category</FormLabel>
           <RadioGroup value={category} onChange={(e) => setCategory(e.target.value)}>
-            <FormControlLabel control={<Radio />} label='Money' value='money' />
-            <FormControlLabel control={<Radio />} label='Shopping' value='shopping' />
-            <FormControlLabel control={<Radio />} label='Todos' value='todos' />
-            <FormControlLabel control={<Radio />} label='Others' value='others' />
+            <FormControlLabel control={<Radio />} label='Money' value='Money' />
+            <FormControlLabel control={<Radio />} label='Shopping' value='Shopping' />
+            <FormControlLabel control={<Radio />} label='Todos' value='Todos' />
+            <FormControlLabel control={<Radio />} label='Others' value='Others' />
           </RadioGroup>
         </FormControl>
         
